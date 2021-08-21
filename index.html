@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mac Book Check-out Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        .sharp-border {
+
+            border-bottom: 3px solid black;
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <!--------------product checkout section----------------->
+        <section class="row py-5 px-2">
+            <!------------product image--------------->
+            <div class="col-lg-5">
+                <img src="images/mac.png" alt="" class="img-fluid">
+            </div>
+            <!---------------product specification------------>
+            <div class="col-lg-7">
+                <h1>Customize your Blue 24-inch <br>iMac with Apple MI chip.</h1>
+                <p>Apple MI chip with 8-core CPU with 4 performance cores and 4 efficiency cores, 7-core GPIJ, and 16-core Neural Engine 8GB unified memory 256GB SSD storage Two Thunderbolt / USB 4 ports Magic Mouse Magic Keyboard US English</p>
+
+                <!------Memory Spec------>
+                <div class="mt-5">
+                    <h5 class="fw-bold">Memory</h5>     
+                    <button class="btn btn-outline-dark" id="base-ram">8GB unified memory</button>
+                    <button class="btn btn-outline-dark" id="more-ram">16GB unified memory</button>
+                    
+                </div>
+                <!------Storage Spec------>
+                <div class="mt-5">
+                    <h5 class="fw-bold">Storage</h5>     
+                    <button class="btn btn-outline-dark" id="base-storage">256GB SSD storage</button>
+                    <button class="btn btn-outline-dark" id="more-storage">512GB SSD storage</button>
+                    <button class="btn btn-outline-dark" id="more-extra-storage">1TB SSD storage</button>
+                    
+                </div>
+                <!------Delivery option------>
+                <div class="mt-5">
+                    <h5 class="fw-bold">Choose your delivery option</h5>     
+                    <button class="btn btn-outline-dark" id="normal-delivery">Friday, Aug 25 FREE Prime Delivery</button>
+                    <button class="btn btn-outline-dark" id="exclusive-delivery">Friday, Aug 21 Delivery charge $20</button>
+                    
+                </div>
+
+                <!---------Product Prices------->
+                <div class="mt-5 w-50">
+                    <!-- base modal laptop price -->
+                    <div class="d-flex justify-content-between border-bottom p-2">
+                        <h5 class="fw-bold">Best price</h5>
+                        <h5 class="fw-bold">$<span id="laptop-price">1299</span></h5>
+                    </div>
+                    <!-- extra memory charge -->
+                    <div class="d-flex justify-content-between border-bottom p-2">
+                        <h5 class="fw-bold">Extra Memory Cost</h5>
+                        <h5 class="fw-bold">$<span id="ram-price">0</span></h5>
+                    </div>
+                    <!-- extra storage charge -->
+                    <div class="d-flex justify-content-between border-bottom p-2">
+                        <h5 class="fw-bold">Extra Storage Cost</h5>
+                        <h5 class="fw-bold">$<span id="storage-price">0</span></h5>
+                    </div>
+                    <!-- delivary charge  -->
+                    <div class="d-flex justify-content-between sharp-border p-2">
+                        <h5 class="fw-bold">Delivery charge</h5>
+                        <h5 class="fw-bold">$<span id="delivery-price">0</span></h5>
+                    </div>
+                    <!-- total price -->
+                    <div class="d-flex justify-content-between border-bottom p-2">
+                        <h5 class="fw-bold">Total Price</h5>
+                        <h5 class="fw-bold">$<span id="total-price">1299</span></h5>
+                    </div>
+                </div>
+
+                <!----------Promo section--------->
+                <div class="mt-4">
+                    <h5>Add Promo Code</h5>
+                    <div class="d-flex">
+                        <input type="text" name="" id="promo-field">
+                        <button type="button" class="btn btn-danger ms-2" id="discount-btn" value="discounted">Apply</button>
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- product total price  -->
+            <div class="col-lg-12 border-top mt-4">
+                <h1 class="text-center mt-2">Total : $<span id="discount-total-price">1299</span></h1>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
